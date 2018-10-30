@@ -1,6 +1,6 @@
 {
 	"scripts": {
-		"start": "npm run build; serve .",
+		"start": "serve .",
 		"build": "bili index.js --format umd-min --moduleName rstest"
 	},
 	"dependencies": {

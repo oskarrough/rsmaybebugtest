@@ -4,10 +4,11 @@
 		"build": "bili index.js --format umd-min --moduleName rstest"
 	},
 	"dependencies": {
-		"remotestoragejs": "^1.0.3"
+		"remotestoragejs": "git://github.com/remotestorage/remotestorage.js.git#4ca0f0cf7492ad3b59f196f4dd9e9a6f09ba1472"
 	},
 	"devDependencies": {
 		"bili": "^3.1.2",
-		"serve": "^10.0.2"
+		"serve": "^10.0.2",
+		"terser": "^3.10.7"
 	}
 }

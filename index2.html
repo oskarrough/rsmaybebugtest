@@ -1,0 +1,14 @@
+<p>cdn version, doesn't throw error</p>
+<script src="https://cdn.jsdelivr.net/npm/remotestoragejs"></script>
+<script>
+  const remoteStorage = new RemoteStorage({logging: true})
+  remoteStorage.access.claim('foo', 'rw')
+  const client = remoteStorage.scope('/foo/')
+  client
+    .getListing('', false)
+    .then(listing => console.log('remoteStorage listing', listing))
+    .catch(err => {
+      throw new Error(err)
+    })
+</script>
+

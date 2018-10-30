@@ -1,0 +1,13 @@
+{
+	"scripts": {
+		"start": "npm run build; serve .",
+		"build": "bili index.js --format umd-min --moduleName rstest"
+	},
+	"dependencies": {
+		"remotestoragejs": "^1.0.3"
+	},
+	"devDependencies": {
+		"bili": "^3.1.2",
+		"serve": "^10.0.2"
+	}
+}

@@ -1,14 +1,16 @@
 {
 	"scripts": {
 		"start": "serve .",
-		"build": "bili index.js --format umd-min --moduleName rstest"
+		"build": "webpack --config webpack.config.js"
 	},
 	"dependencies": {
 		"remotestoragejs": "git://github.com/remotestorage/remotestorage.js.git#4ca0f0cf7492ad3b59f196f4dd9e9a6f09ba1472"
 	},
 	"devDependencies": {
-		"bili": "^3.1.2",
 		"serve": "^10.0.2",
-		"terser": "^3.10.7"
+		"terser": "^3.10.7",
+		"terser-webpack-plugin": "^1.1.0",
+		"webpack": "^4.23.1",
+		"webpack-cli": "^3.1.2"
 	}
 }
